@@ -1,0 +1,452 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*BODY*/
+body {
+    font-family: 'Enriqueta', serif;    
+}
+/*NAVIGATION BAR AND HEADER STRAPLINE*/
+nav {    
+    width: 100vw;
+    height: 75px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    background-color: darkred;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+   list-style: none;
+   color: white;
+   display: inline-block;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+    color: whitesmoke;
+}
+
+nav ul li a:visited {
+    color: whitesmoke;
+}
+
+
+/*MEDIA QUERY FOR NAV DESK TOP*/
+@media only screen and (min-width: 1280px) {
+    
+    nav {    
+        width: 90vw;    
+        margin: 10px auto;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav ul li {
+       list-style: none;
+       font-weight: bolder;
+       display: inline-block;
+       text-align: center;
+    }
+    
+    
+    nav ul li a {
+        text-decoration: none;
+        font-size: 24px;
+        margin: 0px 10px;
+        color: whitesmoke;
+    }
+}
+
+
+.strapline-container {
+    width: 90vw;
+    height: 450px;
+    margin: 10px auto;
+    text-align: center;
+    background-image: url(./images/denverskyline.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+
+.main-strapline {
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*MEDIA QUERY FOR STRAPLINE DESKTOP */
+@media only screen and (min-width: 1280px) {
+    
+    .strapline-container {
+        height: 75vh;
+    }
+
+    .main-strapline {
+        padding-top: 45px;
+        font-size: 45px;
+    }
+
+}
+
+/*MAIN*/
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 275%;
+    font-weight: bolder;
+    font-family: 'Bevan', cursive;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*MAIN-WELCOME SECTION*/
+.welcome-container {
+    width: 90vw;
+    margin: 10px auto;
+    padding: 5px;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+}
+
+/*MAIN-ABOUT SECTION*/
+.about-container {
+    width: 90vw;
+    margin: 10px auto;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    padding: 5px;   
+}
+
+.about-image-container {
+    margin-bottom: 0px;
+}
+
+.about-image-one {
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/cowboystatue.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image-two {
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/nativewallart.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+aside {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .about-container {
+        padding-bottom: 10px;
+    }
+
+    .about-image-one {
+        width: 50vw;
+        height: 450px;
+        display: inline-block;
+        margin-top: 25px;
+
+    }
+
+    .about-image-one-aside {
+        width: 50vw;
+        display: inline-block;
+    }
+
+    .about-image-two {
+        width: 75vw;
+        display: inline-block;
+    }
+
+    .about-image-two-aside {
+        width: 75vw;
+        display: inline-block;
+    }
+
+}
+
+/*MAIN-DIA SECTION*/
+.dia-container {
+    width: 90vw;
+    margin: 10px auto;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    padding-top: 5px;
+
+}
+
+.dia-image-one {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url(./images/diagargoyle.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.dia-image-two {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url(./images/diatroll.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dia-image-three {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url(./images/blucifer.jpeg);
+    background-size: cover;
+    background-position: right;
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .dia-image-one {
+        width: 45vw;
+        height: 300px;
+        display: inline-block;
+    }
+
+    .dia-image-one-aside {
+        width: 45vw;
+        display: inline-block;
+    }
+
+    .dia-image-two {
+        width: 80vw;
+        height: 550px;
+        display: inline-block;
+    }
+
+    .dia-image-two-aside {
+        width: 80vw;
+        display: inline-block;
+    }
+
+    .dia-image-three {
+        width: 85vw;
+        height: 666px;
+        display: inline-block;
+    }
+
+    .dia-image-three-aside {
+        width: 85vw;
+        display: inline-block;
+    }
+
+}
+
+/*MAIN-WEATHER SECTION*/
+
+.weather-container {
+    width: 90vw;
+    margin: 10px auto;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    padding: 5px;   
+}
+
+.weather-table {
+    width: 90vw;
+    height: 100%;
+    margin: 10px auto;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 150%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+.historic-low {
+    color: blue;
+}
+
+.historic-high {
+    color: red;
+}
+/*MAIN-FOOD SECTION*/
+
+.food-intro-container {
+    width: 90vw;
+    margin: 10px auto;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    padding: 5px;  
+}
+
+.restaurant-container {
+    width: 90vw;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.restaurant-category {
+    margin: 10px auto;
+    font-weight: bold;
+    font-family: 'Bevan', cursive;
+    font-size: 180%;
+}
+
+.restaurant-item {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 180%;
+
+}
+
+.restaurant-bio {
+    font-size: 160%;
+}
+
+.restaurant-item:hover{
+    color: black;
+}
+
+.restaurant-item a:link {
+    color: black;
+    
+}
+
+.restaurant-item a:visited{
+    color: black;
+}
+
+@media only screen and (min-width: 1280px) {
+
+
+}
+
+/*MAIN-OUTRO SUMMARY*/
+
+.outro-image-one {
+    width: 90%;
+    height: 200px;
+    margin: 10px auto;
+    background-image: url(./images/larimersqaure.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px auto;
+}
+
+.outro-image-two {
+    background-image: url(./images/bluebear.webp);
+    width: 95%;
+    height: 200px;
+    margin: 5px auto;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.outro-image-three {
+    width: 95%;
+    height: 200px;
+    margin: 5px auto;
+    background-image: url(./images/lovethiscity.webp);
+    background-size: cover;
+    background-position: left;
+}
+
+.outro-summary {
+    width: 90vw;
+    margin: 10px auto;
+    letter-spacing: .5px;
+    text-align: center;
+    font-size: 175%;
+    font-weight: bold;
+    padding: 5px;  
+}
+
+/*FOOTER*/
+
+.footer-strapline {
+    border: 1px solid darkred;
+    color: white;
+    background-color: darkred;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+
+.back-up {
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.back-up:hover{
+    color: white;
+}
+
+.back-up a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.back-up a:visited{
+    color: white;
+}
+
+.credits {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*MEDIA QUERY FOR LANDSCAPE IPHONE*/
+@media only screen and (min-width: 1280px) {
+
+}
